@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/texto1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CULO\n"
+        android:textSize="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/barrier"
+        />
+
+    <TextView
+        android:textSize="20dp"
+        android:id="@+id/texto2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GLUTEOS"
+        app:layout_constraintTop_toBottomOf="@+id/texto1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/barrier"
+        />
+
+    <TextView
+        android:id="@+id/texto3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Uno de dos montículos de tejido curvos y carnosos situados detrás de la pelvis. Las nalgas están formadas por grasa y músculo grueso que ayudan a sostener el cuerpo al estar sentado. Los músculos de las nalgas también se usan para mover las caderas y los muslos. También se llama glúteo."
+        app:layout_constraintStart_toEndOf="@+id/barrier"
+        app:layout_constraintTop_toTopOf="@id/texto1"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/barrier"
+        app:barrierDirection="right"
+        app:constraint_referenced_ids="texto1,texto2"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/qlo_jgp"
+        app:layout_constraintTop_toBottomOf="@+id/texto3"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

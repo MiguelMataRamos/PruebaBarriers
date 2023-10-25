@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="CULO\n"
+        android:id="@+id/texto1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/texto2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        android:gravity="center"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="GLUTEO"
+        android:id="@+id/texto2"
+        app:layout_constraintStart_toEndOf="@+id/texto1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/texto1"
+        app:layout_constraintHorizontal_weight="1"
+        android:gravity="center"
+        android:textSize="20dp"/>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="texto1,texto2"
+        app:barrierDirection="bottom"
+        android:id="@+id/barrier"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/texto3"
+        android:text="Uno de dos montículos de tejido curvos y carnosos situados detrás de la pelvis. Las nalgas están formadas por grasa y músculo grueso que ayudan a sostener el cuerpo al estar sentado. Los músculos de las nalgas también se usan para mover las caderas y los muslos. También se llama glúteo."
+        app:layout_constraintTop_toBottomOf="@+id/barrier"
+        />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/qlo_jgp"
+        app:layout_constraintTop_toBottomOf="@+id/texto3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
