@@ -53,7 +53,7 @@
         android:src="@drawable/qlo_jgp"
         app:layout_constraintTop_toBottomOf="@+id/texto3"
         android:adjustViewBounds="true"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 
 
