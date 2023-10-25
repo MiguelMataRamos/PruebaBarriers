@@ -19,6 +19,8 @@
         android:textSize="30dp"/>
 
     <TextView
+        android:background="@color/gray"
+        android:textColor="@color/black"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="CULO"
@@ -32,6 +34,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/texto2"/>
 
     <TextView
+        android:textColor="@color/black"
+        android:background="@color/gray"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="GLUTEO"
