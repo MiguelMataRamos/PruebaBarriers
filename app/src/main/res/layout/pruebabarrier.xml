@@ -6,16 +6,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/texto1"
+        android:text="EL MUSCULO MAS BONITO"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:textSize="30dp"/>
+
+    <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="CULO\n"
+        android:text="CULO"
         android:id="@+id/texto1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/texto2"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
         app:layout_constraintHorizontal_weight="1"
         android:gravity="center"
-        android:textSize="20dp"/>
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/texto2"/>
 
     <TextView
         android:layout_width="0dp"
@@ -25,6 +39,7 @@
         app:layout_constraintStart_toEndOf="@+id/texto1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/texto1"
+        app:layout_constraintBottom_toBottomOf="@+id/texto1"
         app:layout_constraintHorizontal_weight="1"
         android:gravity="center"
         android:textSize="20dp"/>
